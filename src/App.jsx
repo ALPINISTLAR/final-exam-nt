@@ -1,9 +1,36 @@
-import React from 'react'
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Home from "./pages/Home";
+import Playlist from "./pages/Playlist";
+import Liked from "./pages/Liked";
+import LeftSideBar from "./layouts/LeftSideBar";
+import RightSideBar from "./layouts/RightSideBar";
+import './App.css'
 
-const App = () => {
+const router = createBrowserRouter( [
+  {
+    path: "/",
+    element: <Home />
+  },
+  {
+    path: "/playlist",
+    element: <Playlist />
+  },
+  {
+    path: "/liked",
+    element: <Liked />
+  },
+]);
+
+function App() {
   return (
-    <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet fugit recusandae inventore eos harum. Nulla voluptatibus, earum molestiae perferendis accusamus culpa provident voluptatum eaque enim quidem rerum facilis distinctio eligendi!</div>
-  )
-}
+    <>
+    <div className="app">
+      <LeftSideBar />
+      <RouterProvider router={router}></RouterProvider>
+      <RightSideBar />
+    </div>
+    </>
+  );
+};
 
-export default App
+export default App;
