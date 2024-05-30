@@ -1,0 +1,11 @@
+.app{
+  display: flex;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 30px;
+  border: 3px solid red;
+}
+.pages{
+  width: 62%;
+  background-color:  #121212;
+}

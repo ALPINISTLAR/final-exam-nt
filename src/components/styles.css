@@ -1,0 +1,64 @@
+.home-hero{
+  padding: 20px 40px 50px;
+  background: linear-gradient(rgb(51, 51, 163) 20.09%, rgb(18, 18, 18) 83.4%);
+}
+.top{
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 50px;
+}
+.top button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.top button:hover{
+  opacity: 0.7;
+}
+.top button:first-child{
+  transform: rotate(180deg);
+}
+.home-hero h1{
+  font-size: 39px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.album-wrapper{
+  display: grid;
+  column-gap: 30px;
+  row-gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.album-card{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.album-card:hover{
+  background-color: rgb(255, 255, 255, 0.4);
+}
+.album-card img{
+  width: 82px;
+  height: 82px;
+}
+.album-card h3{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #fff;
+}

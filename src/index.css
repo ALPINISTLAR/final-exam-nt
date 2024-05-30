@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Circular Std';
+  src: local('Circular Std Black'), local('CircularStd-Black'),
+      url('./assets/font/CircularStd-Black.woff2') format('woff2'),
+      url('./assets/font/CircularStd-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: local('Circular Std Medium'), local('CircularStd-Medium'),
+      url('./assets/font/CircularStd-Medium.woff2') format('woff2'),
+      url('./assets/font/CircularStd-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: local('Circular Std Bold'), local('CircularStd-Bold'),
+      url('./assets/font/CircularStd-Bold.woff2') format('woff2'),
+      url('./assets/font/CircularStd-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  text-transform: capitalize;
+}
+img{
+  display: flex;
+}
+button{
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+}
+body{
+  font-family: 'Circular Std', Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+  color: black;
+  /* background-color: #000000; */
+}
