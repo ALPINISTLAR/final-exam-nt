@@ -46,6 +46,7 @@ button{
   padding: 0;
   border: 0;
   background-color: transparent;
+  cursor: pointer;
 }
 h1,h2,h3,h4,h5,h6,p{
   margin: 0;
@@ -54,5 +55,9 @@ body{
   font-family: 'Circular Std', Arial, Helvetica, sans-serif;
   overflow-x: hidden;
   color: black;
-  /* background-color: #000000; */
+  background-color: #000000;
+}
+.main-content{
+  max-width: 62%;
+  background-color: green;
 }
