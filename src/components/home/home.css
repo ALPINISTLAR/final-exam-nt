@@ -1,0 +1,243 @@
+.home-hero{
+  padding: 20px 30px 50px;
+  background: linear-gradient(rgb(51, 51, 163) 20.09%, rgb(18, 18, 18) 83.4%);
+}
+.top{
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-bottom: 50px;
+}
+.top button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.top button:disabled{
+  opacity: 0.4;
+}
+.top button:hover{
+  opacity: 0.7;
+}
+.top button:first-child{
+  transform: rotate(180deg);
+}
+.home-hero h1{
+  font-size: 39px;
+  font-weight: 700;
+  line-height: 50px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+.album-wrapper{
+  display: grid;
+  column-gap: 30px;
+  row-gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.album-card{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255, 0.1);
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.album-card:hover{
+  background-color: rgb(255, 255, 255, 0.4);
+}
+.album-card img{
+  width: 82px;
+  height: 82px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.album-card h3{
+  max-width: 220px;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #fff;
+}
+
+
+/* MUSIC CARD WRAPPER */
+.music-card__wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 0 30px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+.music-card__wrapper div:first-child{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.music-card__wrapper div h2{
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38px;
+  color: #fff;
+}
+.music-card__wrapper div button{
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20.24px;
+  letter-spacing: 0.08em;
+  text-align: right;
+  color: #adadad;
+  text-transform: uppercase;
+  transition: 0.4s ease;
+}
+.music-card__wrapper div button:hover{
+  color: #fff;
+}
+
+.card-music-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+/* MUSIC CARD */
+.music-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: calc((100% - 75px) / 4);
+  border-radius: 8px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255, 0.04);
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.music-card:hover{
+  background-color: rgb(255, 255, 255, 0.25);
+}
+.music-card img{
+  width: 152px;
+  height: 152px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.card-info{
+  max-width: 152px;
+}
+.card-info h3{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #fff;
+  max-width: 152px;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-info p{
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 23px;
+  color: #B3B3B3;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 3em;
+  line-height: 1.5em;
+}
+
+/* Custom audio player styles */
+.player {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #181818;
+}
+
+/* Kontrol tugmalarini o'zgartirish */
+.rhap_container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #181818!important;
+}
+.rhap_progress-section .rhap_time{
+  color: #A6A6A6;
+}
+.rhap_progress-indicator{
+  background-color: #fff!important;
+}
+.rhap_progress-filled{
+  background-color: #fff!important;
+}
+.rhap_download-progress{
+  background-color: #444!important;
+}
+.rhap_controls-section svg{
+  color: #fff;
+}
+
+
+/* SKELETON */
+.skeleton{
+  width: 100%;
+  height: 80px;
+}
+
+.album-wrapper .react-loading-skeleton {
+  min-width: 398px;
+  position: relative;
+  overflow: hidden;
+  animation: pulse 0.6s ease-in-out infinite;
+}
+
+.album-wrapper .react-loading-skeleton::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+  rgba(255, 255, 255, 0) 0%,
+  rgba(255, 255, 255, 0.4) 50%,
+  rgba(255, 255, 255, 0) 100%);
+  transform: translateX(-100%);
+  animation: shimmer 1.5s infinite;
+  border-radius: 6px;
+}
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+
+
+
+
+@keyframes pulse {
+  0% {
+    background-color: rgb(255, 255, 255, 0.1);
+  }
+  50% {
+    background-color: rgb(255, 255, 255, 0.3);
+  }
+  100% {
+    background-color: rgb(255, 255, 255, 0.1);
+  }
+}

@@ -58,6 +58,5 @@ body{
   background-color: #000000;
 }
 .main-content{
-  max-width: 62%;
-  background-color: green;
+  width: 62%;
 }

@@ -1,0 +1,136 @@
+.liked-hero{
+  background: linear-gradient(180deg, #604EC1 10.09%, #121212 83.4%);
+
+}
+.liked-hero .top{
+  padding: 20px 30px ;
+  margin: 0;
+}
+.artist {
+  display: flex;
+  align-items: flex-end;
+  padding: 30px;
+  gap: 32px;
+  padding-bottom: 60px;
+  background-color: rgb(18, 18, 18, 0.1);
+}
+.artist-info{
+  padding-bottom: 14px;
+}
+.artist-info h2{
+  font-size: 122px;
+  font-weight: 900;
+  line-height: 155px;
+  letter-spacing: -0.06em;
+  color: #fff;
+}
+.artist-info p{
+  font-size: 20px;
+  font-weight: 450;
+  line-height: 25px;
+  color: rgb(255, 255, 255, 0.7);
+}
+.controls-wrapper{
+  padding: 0px 30px;
+  margin-bottom: 30px;
+}
+.controls{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.controls button:hover{
+  opacity: 0.7;
+}
+
+.liked-main{
+  padding: 0px 30px;
+}
+.liked-main_header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 50px 15px 25px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #666666;
+}
+.liked-main_header div {
+  font-size: 16px;
+  font-weight: 450;
+  line-height: 20px;
+  letter-spacing: 0.09em;
+  color: #B3B3B3;
+}
+
+.liked-item{
+  display: flex;
+  align-items: center;
+  color: #B3B3B3;
+  padding: 10px 50px 10px 25px;
+  cursor: pointer;
+}
+.liked-item_order{
+  width: 35px;
+  font-size: 22px;
+  font-weight: 450;
+  line-height: 28px;
+  margin-right: 8px;
+  letter-spacing: 0.02em;
+}
+.liked-item_img{
+  margin-right: 20px;
+}
+.liked-item_img img{
+  width: 52px;
+  height: 52px;
+}
+.liked-title-artist{
+max-width: 200px;
+width: 100%;
+margin-right: 50px;
+}
+.liked-item_title{
+  font-size: 20px;
+  font-weight: 450;
+  line-height: 25px;
+  letter-spacing: 0.01em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #fff;
+}
+.liked-item_artist{
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 23px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #B3B3B3;
+}
+.liked-item-album{
+  max-width: 200px;
+  font-size: 18px;
+  font-weight: 450;
+  line-height: 23px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.liked-item_like{
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.liked-item_like img{
+  width: 30px;
+  height: 27px;
+}
+.liked-item_duration{
+  width: 45px;
+  font-size: 20px;
+  font-weight: 450;
+  line-height: 25px;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
