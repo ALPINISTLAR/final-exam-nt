@@ -2,6 +2,7 @@ import React from 'react';
 import MusicCard from './MusicCard';
 
 const MusicCardWrapper = ({ title, playlists }) => {
+
   return (
     <div className='music-card__wrapper'>
       <div>
@@ -10,12 +11,13 @@ const MusicCardWrapper = ({ title, playlists }) => {
       </div>
 
       <div className="card-music-wrapper">
-        {playlists.map(playlist => (
+        {playlists.map(item => (
           <MusicCard
-            key={playlist.id}
-            img={playlist.images[0].url}
-            title={playlist.name}
-            info={playlist.description}
+            key={item.id}
+            id={item.id} // "id" ni uzatish
+            img={item.images[0].url}
+            title={item.name}
+            info={item.description}
           />
         ))}
       </div>

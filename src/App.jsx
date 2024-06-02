@@ -1,4 +1,4 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 import Home from "./pages/Home";
 import Playlist from "./pages/Playlist";
@@ -11,7 +11,7 @@ import MusicPlayer from "./components/MusicPlayer";
 import { useDispatch, useSelector } from "react-redux";
 import { create } from "./redux/authSlice";
 
-const router = createBrowserRouter([
+const routes = [
   {
     path: "/",
     element: <Home />
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
     path: "/liked",
     element: <Liked />
   },
-]);
+];
 
 function App() {
   const dispatch = useDispatch();
@@ -56,14 +56,20 @@ function App() {
   }, [token, expireDate]);
 
   return (
-    <div className="app">
-      <LeftSideBar />
-      <div className="main-content">
-        <RouterProvider router={router} />
-        <MusicPlayer />
+    <Router>
+      <div className="app">
+        <LeftSideBar />
+        <div className="main-content">
+          <Routes>
+            {routes.map((route, index) => (
+              <Route key={index} path={route.path} element={route.element} />
+            ))}
+          </Routes>
+          <MusicPlayer />
+        </div>
+        <RightSideBar />
       </div>
-      <RightSideBar />
-    </div>
+    </Router>
   );
 }
 

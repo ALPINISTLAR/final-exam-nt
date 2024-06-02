@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles.css';
+import './home.css';
 
 const AlbumCard = ({ data }) => {
   if (!data || !data.images || data.images.length === 0) {
